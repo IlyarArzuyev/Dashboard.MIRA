@@ -38,15 +38,21 @@
 
   <!-- Контейнер с iframe -->
   <main class="glass w-full max-w-6xl h-[80vh] rounded-2xl shadow-xl overflow-hidden">
-    <iframe id="frame" src="https://lookerstudio.google.com/reporting/8e93bfa2-045b-4a95-92aa-d87be737d374" title="Встроенный сайт"></iframe>
+    <iframe 
+      id="frame" 
+      src="https://lookerstudio.google.com/embed/reporting/8e93bfa2-045b-4a95-92aa-d87be737d374/page/p_3p495ia6td" 
+      title="Looker Studio"
+      allowfullscreen
+    ></iframe>
   </main>
 
   <script>
     function switchFrame() {
       const iframe = document.getElementById("frame");
-      iframe.src = iframe.src.includes("example.com")
-        ? "https://docs.google.com/spreadsheets/d/1X9QU4lTRKt2pS-UUuwMpCkbtWNTBI2GkrprO2-bKbJQ/edit?gid=1497014507#gid=1497014507"
-        : "https://lookerstudio.google.com/reporting/8e93bfa2-045b-4a95-92aa-d87be737d374";
+      const lookerURL = "https://lookerstudio.google.com/embed/reporting/8e93bfa2-045b-4a95-92aa-d87be737d374/page/p_3p495ia6td";
+      const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSkAK2xN25DE0cJQjsQjyz3Z4RtT-mBXZP65zPB7eXQocIbzySWBNj9TuobCvGMR13YHg1BBSJ-KoBU/pubhtml?gid=1497014507&single=true&widget=true&headers=false";
+
+      iframe.src = iframe.src.includes("lookerstudio") ? sheetURL : lookerURL;
     }
   </script>
 
