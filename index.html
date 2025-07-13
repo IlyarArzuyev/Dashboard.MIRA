@@ -47,7 +47,6 @@
 
 
 
-
   
 
   
@@ -55,7 +54,7 @@
   <main class="glass w-full max-w-6xl h-[80vh] rounded-2xl shadow-xl overflow-hidden">
     <iframe 
       id="frame" 
-      src="https://lookerstudio.google.com/embed/reporting/add8b082-0f92-4ec6-80b4-b19eb69136c7/page/p_8uwvdenbud" 
+      src="https://lookerstudio.google.com/embed/reporting/add8b082-0f92-4ec6-80b4-b19eb69136c7/page/p_g75teohbud" 
       title="Looker Studio"
       allowfullscreen
     ></iframe>
@@ -64,7 +63,7 @@
   <script>
     function switchFrame() {
       const iframe = document.getElementById("frame");
-      const lookerURL = "https://lookerstudio.google.com/embed/reporting/add8b082-0f92-4ec6-80b4-b19eb69136c7/page/p_8uwvdenbud";
+      const lookerURL = "//lookerstudio.google.com/embed/reporting/add8b082-0f92-4ec6-80b4-b19eb69136c7/page/p_g75teohbud";
       const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRkqc0HnxXWYQuMhj3372NTgJUPbGfFF8abMVFLq9hVG2p3J7-ouNRB1mEzihhCQX5teDgahRW5C4Nw/pubhtml?gid=14089623&amp;single=true&amp;widget=true&amp;headers=false";
 
       iframe.src = iframe.src.includes("lookerstudio") ? sheetURL : lookerURL;
