@@ -65,7 +65,7 @@
     function switchFrame() {
       const iframe = document.getElementById("frame");
       const lookerURL = "https://lookerstudio.google.com/embed/reporting/add8b082-0f92-4ec6-80b4-b19eb69136c7/page/p_8uwvdenbud";
-      const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRkqc0HnxXWYQuMhj3372NTgJUPbGfFF8abMVFLq9hVG2p3J7-ouNRB1mEzihhCQX5teDgahRW5C4Nw/pubhtml?gid=14089623&single=true";
+      const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRkqc0HnxXWYQuMhj3372NTgJUPbGfFF8abMVFLq9hVG2p3J7-ouNRB1mEzihhCQX5teDgahRW5C4Nw/pubhtml?gid=14089623&amp;single=true&amp;widget=true&amp;headers=false";
 
       iframe.src = iframe.src.includes("lookerstudio") ? sheetURL : lookerURL;
     }
